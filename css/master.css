@@ -1,0 +1,210 @@
+	/* Coded with love by Mutiullah Samim */
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #382480 !important;
+    }
+
+    .data_card_1 {
+        height: 600px;
+        width: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: #1d1200;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        opacity: 0.8;
+        color: #f3f5f7;
+
+    }    
+    .user_card {
+        height: 400px;
+        width: 350px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: #1d1200;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        opacity: 0.8;
+        color: #f3f5f7;
+
+    }
+    .card-body{
+        background: #1d1200;
+        opacity: 1;
+        color: #f3f5f7;
+    }
+
+    .card_btn {
+        width: 100%;
+        background: #c0392b !important;
+        color: white !important;
+        opacity: 0.8;
+    }
+    .card_btn:hover {
+        opacity: 1;
+    }
+
+    .card_btn:active{
+        transform: scale(0.95)
+        }
+        
+    .card_btn:focus {
+        box-shadow: none !important;
+        outline: 0px !important;
+    }
+    .user_card_about {
+        height: 550px;
+        width: 450px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: #1d1200;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        opacity: 0.8;
+        color: #f3f5f7;
+
+    }
+    .brand_logo_container {
+        position: absolute;
+        height: 170px;
+        width: 170px;
+        top: -75px;
+        border-radius: 50%;
+        background: #382480;
+        padding: 10px;
+        text-align: center;
+    }
+    .brand_logo {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+    .brand_logo_container_dialog {
+        position: absolute;
+        height: 48px;
+        width: 48px;
+        top: 2px;
+        border-radius: 50%;
+        background: #382480;
+        padding: 1px;
+        text-align:left;
+    }
+    .brand_logo_dialog {
+        height: 46px;
+        width: 46px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+    .form_container {
+        margin-top: 100px;
+    }
+    .login_btn {
+        width: 100%;
+        background: #c0392b !important;
+        color: white !important;
+        opacity: 0.8;
+    }
+
+    .login_btn:hover {
+        opacity: 1;
+    }
+
+    .login_btn:active{
+        transform: scale(0.95)
+        }
+        
+    .login_btn:focus {
+        box-shadow: none !important;
+        outline: 0px !important;
+    }
+    .login_container {
+        padding: 0 2rem;
+        color: #f3f5f7
+    }
+    .input-group-text {
+        background: #c0392b !important;
+        color: white !important;
+        border: 0 !important;
+        border-radius: 0.25rem 0 0 0.25rem !important;
+    }
+    .input_user,
+    .input_pass:focus {
+        box-shadow: none !important;
+        outline: 0px !important;
+    }
+
+    .form-check-input{
+        background-color: #c0392b !important;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+        background-color: #c0392b !important;
+    }
+    /* Inicio - Adicionales - Juan Carlos Chacón - 03/03/2019*/
+    .header_dialog{
+        background: #c0392b !important;
+        color: white !important;
+        height: 55px;
+    }
+    .card-header{
+        background: #382480 !important;
+        color: #ffff;
+    }
+
+    .card-footer{
+        background: #382480 !important;
+        color: #ffff;
+    }
+
+    .brand_logo_container_card {
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        top: 1px;
+        border-radius: 50%;
+        background: #382480;
+        padding: 1px;
+        text-align: left;
+    }
+    .brand_logo_card {
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    .element{
+        display:inline-block;
+        text-align: center;
+        width: 750px;margin:0;
+    }
+
+
+
+
+    /* Fin - Adicionales - Juan Carlos Chacón - 03/03/2019*/
+   
