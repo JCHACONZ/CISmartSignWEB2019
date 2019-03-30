@@ -1,0 +1,107 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css\MenuPrincipal.css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CISmart Sign - Menú Principal</title>
+    <link rel="shortcut icon" href="img/icon_cis.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <div class="jumbotron">
+          <h1>CISmart Sign Web - 2019</h1>      
+          <p>Sistema de Captura, Administración y Distribución de Firmas, Documentos y Sellos</p>
+          
+        </div>
+          
+
+      <div id="mySidebar" class="sidebar">
+        <div class="d-flex justify-content-center">
+              <div class="brand_logo_container_sidebar">
+                <img src="img/logo.png" class="brand_logo_sidebar" alt="Logo">
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp Acerca de CISmart Sign</a>
+        <button class="dropdown-btn"><i class="fa fa-tasks" aria-hidden="true"></i></i>&nbsp Administración 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="RegistroSucursales.html">Sucursales</a>
+            <a href="RegistroUsuario.html">Usuarios</a>
+            <a href="RegistroPerfiles.html">Perfiles</a>   
+            <button class="dropdown-btn"><i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp Atributos 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="RegistroAtributosTipoProducto.html">Tipo de Producto</a>
+              <a href="RegistroAtributosTipoTitular.html">Tipo de Titular</a>
+              <a href="RegistroAtributosTipoRegla.html">Tipo de Reglas</a>
+              <a href="RegistroAtributosTipoImagen.html">Tipo de Imágenes</a>         
+              <a href="RegistroAtributosTipoFirmante.html">Tipo de Firmante</a>         
+            </div>
+          </div>
+          
+        <a href="RegistroFuncionario.html"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp Funcionarios</a>
+        <a href="RegistroClientes.html"><i class="fa fa-users" aria-hidden="true"></i>&nbsp Clientes</a>
+        <a href="RegistroProductos.html"><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp Productos</a>
+        <a href="#Metricas"><i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp Métricas</a>
+        <button class="dropdown-btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp Auditorías 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Taquilla</a>
+          <a href="#">Administrativa</a>
+          <a href="#">Capturas</a>
+        </div>
+      </div>
+        
+
+
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Menú Principal</button>  
+      </div>
+
+
+    <script>
+   //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+
+      /********************************************/
+
+      /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+
+      /**************************************/
+
+    </script>
+      
+    </body>
+</html> 
+

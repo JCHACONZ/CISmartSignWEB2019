@@ -1,0 +1,299 @@
+<script src="css/jquery/jquery-3.3.1.js"></script>
+<script src="bootstrap/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> 
+<link href="css/master.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>CISmart Sign Web - Registro de Usuarios</title>
+        <link rel="shortcut icon" href="img/icon_cis.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <div class="card">
+            <div class="card-header"><strong>CISmart Sign Web </strong> - Registro de Usuarios
+                <div class="d-flex justify-content-end">
+                        <div class="brand_logo_container_card">
+                          <img src="img/logo.png" class="brand_logo_card" alt="Logo">
+                      </div>
+                  </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-center h-100">
+                    <aside class="col-sm-6">
+                            <article class="card-group-item">
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                                                        <input type="text" class="form-control" id="inputCI" placeholder="CI/Rif"   data-toggle="tooltip" data-placement="right" title="Cédula de Identidad / Rif">
+                                                        <span class="input-group-append">
+                                                            <button class="btn btn-outline-secondary" type="button">
+                                                                <i class="fa fa-search"></i>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                        
+                                                </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text"><i class="far fa-address-card"></i></span>
+                                                            <input type="text" class="form-control" id="inputCodFuncionario" placeholder="Cód.Funcionario"   data-toggle="tooltip" data-placement="right" title="Código de Funcionario">
+                                                        </div>
+                                                    </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                        <input type="text" class="form-control" id="inputNombre" placeholder="Nombre Completo"   data-toggle="tooltip" data-placement="right" title="Nombres y Apellidos">
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                                    <input type="text" class="form-control" id="inputUsuario" placeholder="Correo Electrónico"  data-toggle="tooltip" data-placement="right" title="Correo Electrónico">
+                                                </div>
+                                                
+                                                </div>
+            
+                                                <div class="col-sm-6">
+
+                                                        <div class="input-group-append">
+                                                                <span class="input-group-text"><i class="fas fa-building"></i></span>
+                                                                <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Unidad Funcional o Departamento">
+                                                                        <option selected>Unidad/Departamento</option>
+                                                                        <option value="1">Registro de Clientes</option>
+                                                                        <option value="2">Seguridad de Datos</option>
+                                                                        <option value="3">Seguridad de la Información</option>
+                                                                    </select>
+                                                        </div>
+                                                        
+                                                       
+                                                    
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password"  data-toggle="tooltip" data-placement="right" title="Clave de Acceso">
+                                                    </div>
+                                                </div>
+                
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                                        <input type="password" class="form-control" id="inputRePassword" placeholder="Re Password"  data-toggle="tooltip" data-placement="right" title="Confirmación de Clave de Acceso">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn card_btn col-3 ">Reiniciar Clave</button>
+                            </div>
+                            <br>
+                            <h4>Usuarios Registrados</h4>
+                            <div class="container_table"   style="height: 300px; overflow: auto;">
+                                    <table class="table table-dark table-striped table-hover">
+                                      <thead>
+                                        <tr>
+                                          <th>Usuario</th>
+                                          <th>Nombre Completo</th>
+                                          <th>Perfil</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>juancarlos.chacon@grupocis.net</td>
+                                          <td>Juan Carlos Chacón</td>
+                                          <td>Administrador</td>
+                                        </tr>
+                                        <tr>
+                                          <td>iliana.sulbaran@grupocis.net</td>
+                                          <td>Iliana Sulbarán</td>
+                                          <td>Operador de Captura</td>
+                                        </tr>
+                                        <tr>
+                                          <td>gabriela.chacon@grupocis.net</td>
+                                          <td>Gabriela Chacón</td>
+                                          <td>Operador de Captura</td>
+                                        <tr>
+                                            <td>maia.chacon@grupocis.net</td>
+                                            <td>Maia Chacón</td>
+                                            <td>Funcionario</td>
+                                        </tr>     
+                                        <tr>
+                                            <td>norma.zapata@grupocis.net</td>
+                                            <td>Norma Zapata de Chacón</td>
+                                            <td>Funcionario</td>
+                                        </tr> 
+                                        <tr>
+                                            <td>luis.chacon@grupocis.net</td>
+                                            <td>Luis Enrique Chacón</td>
+                                            <td>Funcionario</td>
+                                        </tr>                                                                                                                            
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                            </div>
+                    </aside>
+
+                    <aside class="col-sm-6">
+                        <article class="card-group-item">
+                            <div class="filter-content">
+                                <div class="card-body">
+                                    <form>
+
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <div class="input-group-append">
+                                                     <span class="input-group-text"><i class="fas fa-user-cog"></i></span>
+                                                     <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Perfil del Usuario">
+                                                        <option selected>Perfil </option>
+                                                        <option value="1">Administrador</option>
+                                                        <option value="2">Operador Captura</option>
+                                                        <option value="3">Funcionario</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">Cambiar Clave cada</label>
+                                            <div class="col-sm-2">
+                                                <select class="browser-default custom-select">
+                                                    <option selected>30</option>
+                                                    <option value="1">30</option>
+                                                    <option value="2">60</option>
+                                                    <option value="3">90</option>
+                                                </select>
+                                            </div>
+                                            <label class="col-sm-2 col-form-label">Días</label>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">Clave Diferente a las</label>
+                                            <div class="col-sm-2">
+                                                <select class="browser-default custom-select">
+                                                        <option selected>5</option>
+                                                        <option value="1">5</option>
+                                                        <option value="2">10</option>
+                                                        <option value="3">15</option>
+                                                        <option value="3">20</option>
+                                                </select>
+                                            </div>
+                                            <label class="col-sm-2 col-form-label">Anteriores</label>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">Max. Cant. Intentos</label>
+                                            <div class="col-sm-2">
+                                                <select class="browser-default custom-select">
+                                                    <option selected>3</option>
+                                                    <option value="1">3</option>
+                                                    <option value="2">5</option>
+                                                    <option value="3">9</option>
+                                                </select>
+                                            </div>
+                                            <label class="col-sm-2 col-form-label">Fallos</label>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customControlInline1">
+                                                <label class="custom-control-label" for="customControlInline1">Usuario Bloqueado</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customControlInline2">
+                                                <label class="custom-control-label" for="customControlInline2">Usuario Habilitado</label>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optradio">Clave nunca caduca
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optradio">Establecer Caducidad Clave de Acceso
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </article>
+
+                        <div class="form-group">
+                            <div class="form-inline">
+                                <label class="col-sm-3 col-form-label">Ultimo Acceso :</label>
+                                <input type="text" class="form-control col-4" id="UltimoAcceso"   data-toggle="tooltip" data-placement="right" title="Último Acceso al Sistema" readonly>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-inline">
+                                <label class="col-sm-3 col-form-label">Ultimo Acceso :</label>
+                                <input type="text" class="form-control col-4" id="UltimoCambio"   data-toggle="tooltip" data-placement="right" title="Último Cambio de Clave" readonly>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-inline">
+                                <label class="col-sm-3 col-form-label">Fecha de Registro :</label>
+                                <input type="text" class="form-control col-4" id="Fecha Registro"   data-toggle="tooltip" data-placement="right" title="Fecha de Registro en el Sistema" readonly>
+                            </div>  
+                        </div>   
+
+                        <div class="element">
+                                <button type="submit" class="btn card_btn col-2 ">Nuevo    </button>
+                                <button type="submit" class="btn card_btn col-2">Almacenar</button>
+                                <button type="submit" class="btn card_btn col-2">Eliminar </button>
+                                <a href="Principal.html"><button type="submit" class="btn card_btn col-2">Salir</button></a>
+                        </div>
+
+                   
+                    </aside>
+                </div>
+            </div>
+            <div class="card-footer - text-center">
+                <strong>CISmart Sign Web </strong> - Registro de Usuarios - www.grupocis.net - 
+                Todos los derechos reservados - <p>&copy; 2009 -  Caracas - Venezuela.
+            </div>
+        </div>
+    </body>
+
+</html>

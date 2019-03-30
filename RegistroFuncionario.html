@@ -1,0 +1,289 @@
+<script src="css/jquery/jquery-3.3.1.js"></script>
+<script src="bootstrap/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> 
+<link href="css/master.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>CISmart Sign Web - Registro de Funcionarios</title>
+        <link rel="shortcut icon" href="img/icon_cis.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <div class="card">
+            <div class="card-header"><strong>CISmart Sign Web </strong> - Registro de Funcionarios
+                <div class="d-flex justify-content-end">
+                        <div class="brand_logo_container_card">
+                          <img src="img/logo.png" class="brand_logo_card" alt="Logo">
+                      </div>
+                  </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-center h-100">
+                    <aside class="col-sm-6">
+                            <article class="card-group-item">
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                                                        <input type="text" class="form-control" id="inputCodFuncionario" placeholder="Código de Funcionario"   data-toggle="tooltip" data-placement="right" title="Código de Funcionario">
+                                                        <span class="input-group-append">
+                                                                <button class="btn btn-outline-secondary" type="button">
+                                                                    <i class="fa fa-search"></i>
+                                                                </button>
+                                                        </span>
+                                                    </div>
+                                                        
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                        <input type="text" class="form-control" id="inputNombre" placeholder="Nombre Completo"   data-toggle="tooltip" data-placement="right" title="Nombres y Apellidos">
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                                    <input type="text" class="form-control" id="inputUsuario" placeholder="Correo Electrónico"  data-toggle="tooltip" data-placement="right" title="Correo Electrónico">
+                                                </div>
+                                                
+                                                </div>
+            
+                                                <div class="col-sm-6">
+
+                                                        <div class="input-group-append">
+                                                                <span class="input-group-text"><i class="fas fa-building"></i></span>
+                                                                <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Unidad Funcional o Departamento">
+                                                                        <option selected>Unidad/Departamento</option>
+                                                                        <option value="1">Registro de Clientes</option>
+                                                                        <option value="2">Seguridad de Datos</option>
+                                                                        <option value="3">Seguridad de la Información</option>
+                                                                    </select>
+                                                        </div>
+                                                        
+                                                       
+                                                    
+                                                </div>
+                                            </div>
+            
+                                        </form>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <br>
+                            <h4>Funcionarios Registrados</h4>
+                            <div class="container_table"   style="height: 300px; overflow: auto;">
+                                    <table class="table table-dark table-striped table-hover">
+                                      <thead>
+                                        <tr>
+                                          <th>Código</th>
+                                          <th>Nombre Completo</th>
+                                          <th>Unidad</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>E58965</td>
+                                          <td>Juan Carlos Chacón</td>
+                                          <td>Registro de Clientes</td>
+                                        </tr>
+                                        <tr>
+                                          <td>F58964</td>
+                                          <td>Iliana Sulbarán</td>
+                                          <td>Registro de Clientes</td>
+                                        </tr>
+                                        <tr>
+                                          <td>E213659</td>
+                                          <td>Gabriela Chacón</td>
+                                          <td>Seguridad de la Información</td>
+                                        <tr>
+                                            <td>F96325</td>
+                                            <td>Maia Chacón</td>
+                                            <td>Seguridad de Datos</td>
+                                        </tr>     
+                                        <tr>
+                                            <td>E85236</td>
+                                            <td>Norma Zapata de Chacón</td>
+                                            <td>Seguridad de Datos</td>
+                                        </tr> 
+                                        <tr>
+                                            <td>F85214</td>
+                                            <td>Luis Enrique Chacón</td>
+                                            <td>Seguridad de Datos</td>
+                                        </tr>                                                                                                                            
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                            </div>
+                    </aside>
+
+                    <aside class="col-sm-6">
+                        <article class="card-group-item">
+                            <div class="filter-content">
+                                <div class="card-body">
+                                    <form>
+                                        <section class="container py-4">
+                                            <div class="row">
+                                                <!--Tabs del Panel Derecho -->
+                                                <div class="col-md-12">
+                                                    <ul id="tabsJustified" class="nav nav-tabs">
+                                                        <li class="nav-item"><a href="" data-target="#RegistroFotografico" data-toggle="tab" class="nav-link small text-uppercase active show">Registro Fotográfico</a></li>
+                                                        <li class="nav-item"><a href="" data-target="#RegistroFirma" data-toggle="tab" class="nav-link small text-uppercase">Firma</a></li>
+                                                        <li class="nav-item"><a href="" data-target="#RegistroMediaFirma" data-toggle="tab" class="nav-link small text-uppercase">Media Firma</a></li>                                                        
+                                                        <li class="nav-item"><a href="" data-target="#CuentasAsociadas" data-toggle="tab" class="nav-link small text-uppercase">Cuentas Asociadas</a></li>
+                                                    </ul>
+                                                    
+                                                    <div id="tabsJustifiedContent" class="tab-content">
+                                                        <div id="RegistroFotografico" class="tab-pane fade  active show">
+                                                            <div class="row pb-2">
+                                                                <div class="col-md-7">
+                                                                        
+                                                                    <br><hr>
+                                                                    <div class="element">
+                                                                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="rounded-circle" alt="avatar">
+                                                                        <br><hr>
+                                                                        <p>Actualizar Registro Fotográfico...</p>
+                                                                    
+
+                                                                        <div class="custom-file col-md-7">
+                                                                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                                                            <label class="custom-file-label" for="validatedCustomFile">Seleccionar Archivo...</label>
+                                                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                                                        </div>
+                                                                    </div></hr><br>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>                                                        
+                                                        <div id="RegistroFirma" class="tab-pane fade">
+                                                            <div class="row pb-2">
+                                                                <div class="col-md-7">
+                                                                        
+                                                                    <br><hr>
+                                                                    <div class="element">
+                                                                        <img src="img/Signature.png" class="img-thumbnail" alt="signature"  width="393" height="330">
+                                                                        <br><hr>
+                                                                        <p>Actualizar Registro de Firma Completa...</p>
+                                                                    
+
+                                                                        <div class="custom-file col-md-7">
+                                                                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                                                            <label class="custom-file-label" for="validatedCustomFile">Seleccionar Archivo...</label>
+                                                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                                                        </div>
+                                                                    </div></hr><br>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div id="RegistroMediaFirma" class="tab-pane fade">
+                                                            <div class="row pb-2">
+                                                                <div class="col-md-7">
+                                                                        
+                                                                    <br><hr>
+                                                                    <div class="element">
+                                                                        <img src="img/Signature.png" class="img-thumbnail" alt="signature"  width="393" height="330">
+                                                                        <br><hr>
+                                                                        <p>Actualizar Registro de Media Firma...</p>
+                                                                    
+
+                                                                        <div class="custom-file col-md-7">
+                                                                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                                                            <label class="custom-file-label" for="validatedCustomFile">Seleccionar Archivo...</label>
+                                                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                                                        </div>
+                                                                    </div></hr><br>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>                                                        
+                                                        <div id="CuentasAsociadas" class="tab-pane fade">
+                                                            <div class="container_table" style="height: 400px; overflow: auto;">
+                                                                    <table class="table table-dark table-striped table-hover">
+                                                                            <thead>
+                                                                            <tr>
+                                                                                <th>Número de Cuenta</th>
+                                                                                <th>Titular</th>
+                                                                                <th>Tipo de Cuenta</th>
+                                                                            </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td>0111-0122-25-6655447788</td>
+                                                                                <td>Grupo CIS de Venezuela, C.A.</td>
+                                                                                <td>Jurídica</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>0111-0455-25-7744113685</td>
+                                                                                <td>El mundo del Pollo, C.A.</td>
+                                                                                <td>Jurídica</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>0111-0789-87-7896547896</td>
+                                                                                <td>Gabriela Chacón</td>
+                                                                                <td>Natural</td>
+                                                                            <tr>
+                                                                                <td>0111-1937-78-8866332574</td>
+                                                                                <td>Claudio Chacón</td>
+                                                                                <td>Natural</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>0111-0974-74-9631478521</td>
+                                                                                <td>Ministerio de Ciencia y Tecnología</td>
+                                                                                <td>Gobierno</td>
+                                                                                </tr>                                                                                    
+                                                                            </tbody>
+                                                                    </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                     </form>
+                                </div>
+                            </div>
+                        </article>
+
+                        <div class="element">
+                            <button type="submit" class="btn card_btn col-2 ">Nuevo    </button>
+                            <button type="submit" class="btn card_btn col-2">Almacenar</button>
+                            <button type="submit" class="btn card_btn col-2">Eliminar </button>
+                            <a href="Principal.html"><button type="submit" class="btn card_btn col-2">Salir</button></a>
+                        </div>
+
+                   
+                    </aside>
+                </div>
+            </div>
+            <div class="card-footer - text-center">
+                <strong>CISmart Sign Web </strong> - Registro de Usuarios - www.grupocis.net - 
+                Todos los derechos reservados - <p>&copy; 2009 -  Caracas - Venezuela.
+            </div>
+        </div>
+    </body>
+
+</html>

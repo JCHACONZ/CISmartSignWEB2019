@@ -1,0 +1,301 @@
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/master.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>CISmart Sign Web - Registro de Atributos de Productos</title>
+        <link rel="shortcut icon" href="img/icon_cis.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        
+    </head>
+
+    <body>
+        <div class="card">
+            <div class="card-header"><strong>CISmart Sign Web </strong> - Registro de Atributos de Productos
+                <div class="d-flex justify-content-end">
+                        <div class="brand_logo_container_card">
+                          <img src="img/logo.png" class="brand_logo_card" alt="Logo">
+                      </div>
+                  </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-center h-100">
+                    <aside class="col-sm-6">
+                            <article class="card-group-item">
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                                                        <input type="text" class="form-control" id="inputCI" placeholder="CI/Rif"   data-toggle="tooltip" data-placement="right" title="Cédula de Identidad / Rif">
+                                                        <span class="input-group-append">
+                                                                <button class="btn btn-outline-secondary" type="button">
+                                                                    <i class="fa fa-search"></i>
+                                                                </button>
+                                                        </span>
+                                                    </div>
+                                                        
+                                                </div>
+                                             </div>
+            
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                        <input type="text" class="form-control" id="inputNombre" placeholder="Nombre Completo / Razón Social"   data-toggle="tooltip" data-placement="right" title="Nombres y Apellidos / Razón Social">
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                                        <input type="text" class="form-control" id="inputUsuario" placeholder="Correo Electrónico"  data-toggle="tooltip" data-placement="right" title="Correo Electrónico">
+                                                    </div>
+                                                </div>
+            
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                                        <input type="text" class="form-control" id="inputUsuario" placeholder="Correo Electrónico Alternativo"  data-toggle="tooltip" data-placement="right" title="Correo Electrónico Alternativo">
+                                                    </div>                                                   
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                    <div class="col-sm-12">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text"><i class="fas fa-address-book"></i></span>
+                                                            <input type="text" class="form-control" id="inputDireccion1" placeholder="Dirección"   data-toggle="tooltip" data-placement="right" title="Dirección">
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="form-group row">
+                                                    <div class="col-sm-12">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text"><i class="fas fa-address-book"></i></span>
+                                                            <input type="text" class="form-control" id="inputDireccion2" placeholder="Dirección"   data-toggle="tooltip" data-placement="right" title="Dirección">
+                                                        </div>
+                                                    </div>
+                                                </div>       
+                                                
+                                                <div class="form-group row">
+                                                    <div class="col-sm-12">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text"><i class="fas fa-address-book"></i></span>
+                                                            <input type="text" class="form-control" id="inputDireccion3" placeholder="Dirección"   data-toggle="tooltip" data-placement="right" title="Dirección">
+                                                        </div>
+                                                    </div>
+                                                </div>  
+    
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text"><i class="fas fa-map"></i></span>
+                                                            <input type="text" class="form-control" id="inputPais" placeholder="País"   data-toggle="tooltip" data-placement="right" title="País">
+                                                        </div>
+                                                            
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text"><i class="fas fa-map-marked"></i></span>
+                                                                <input type="text" class="form-control" id="inputEstado" placeholder="Estado"   data-toggle="tooltip" data-placement="right" title="Estado">
+                                                            </div>
+                                                    </div>
+                                                    
+                                                </div>  
+                                                
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                                            <input type="text" class="form-control" id="inputphone1" placeholder="Número de Teléfono"   data-toggle="tooltip" data-placement="right" title="Número de Teléfono">
+                                                        </div>
+                                                            
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                                                <input type="text" class="form-control" id="inputphone2" placeholder="Número de Teléfono"   data-toggle="tooltip" data-placement="right" title="Número de Teléfono">
+                                                            </div>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="element">
+                                    <button type="submit" class="btn card_btn col-2 ">Nuevo    </button>
+                                    <button type="submit" class="btn card_btn col-2">Almacenar</button>
+                                    <button type="submit" class="btn card_btn col-2">Eliminar </button>
+                                    <a href="Principal.html"><button type="submit" class="btn card_btn col-2">Salir</button></a>
+                            </div>
+                    </aside>
+
+                    <aside class="col-sm-6">
+                        <article class="card-group-item">
+                            <div class="filter-content">
+                                <div class="card-body">
+                                    <form>
+                                        <section class="container py-4">
+                                            <div class="row">
+                                                <!--Tabs del Panel Derecho -->
+                                                <div class="col-md-12">
+                                                    <ul id="tabsJustified" class="nav nav-tabs">
+                                                        <li class="nav-item"><a href="" data-target="#UsuariosRegistrados" data-toggle="tab" class="nav-link small text-uppercase">Usuarios Registrados</a></li>
+                                                        <li class="nav-item"><a href="" data-target="#RegistroFotografico" data-toggle="tab" class="nav-link small text-uppercase active">Registro Fotográfico</a></li>
+                                                        <li class="nav-item"><a href="" data-target="#CuentasAsociadas" data-toggle="tab" class="nav-link small text-uppercase">Cuentas Asociadas</a></li>
+                                                    </ul>
+                                                    
+                                                    <div id="tabsJustifiedContent" class="tab-content">
+                                                        <div id="UsuariosRegistrados" class="tab-pane fade">
+                                                            <div class="container_table" style="height: 400px; overflow: auto;">
+                                                                    <table class="table table-dark table-striped table-hover">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th>Cedula / Rif</th>
+                                                                            <th>Nombre Completo / Razón Social</th>
+                                                                        </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>V10349214</td>
+                                                                                <td>Juan Carlos Chacón</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>V11922600</td>
+                                                                                <td>Iliana Sulbarán</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>V27522337</td>
+                                                                                <td>Gabriela Chacón</td>
+                                                                            <tr>
+                                                                                <td>V342912</td>
+                                                                                <td>Claudio Chacón</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>V15345123</td>
+                                                                                <td>Pedro Pérez</td>
+                                                                            </tr>  
+                                                                            <tr>
+                                                                                <td>V18369741</td>
+                                                                                <td>José Díaz</td>
+                                                                            </tr>     
+                                                                            <tr>
+                                                                                <td>V27852159</td>
+                                                                                <td>Claudia Chacón</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>V20789357</td>
+                                                                                <td>Maia Chacón</td>
+                                                                            </tr> 
+                                                                            <tr>
+                                                                                <td>v13587963</td>
+                                                                                <td>Shumi Sulbarán</td>
+                                                                            </tr>                                                                                                                                                                                                                                                                                                                                                                                         
+                                                                        </tbody>
+                                                                    </table>
+                                                            </div>
+                                                        </div>
+                                                        <div id="RegistroFotografico" class="tab-pane fade active show">
+                                                            <div class="row pb-2">
+                                                                <div class="col-md-7">
+                                                                        
+                                                                    <br><hr>
+                                                                    <div class="element">
+                                                                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="rounded-circle" alt="avatar">
+                                                                        <p>Actualizar Registro Fotográfico...</p>
+                                                                    
+
+                                                                        <div class="custom-file col-md-7">
+                                                                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                                                            <label class="custom-file-label" for="validatedCustomFile">Seleccionar Archivo...</label>
+                                                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                                                        </div>
+                                                                    </div></hr><br>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div id="CuentasAsociadas" class="tab-pane fade">
+                                                            <div class="container_table" style="height: 400px; overflow: auto;">
+                                                                    <table class="table table-dark table-striped table-hover">
+                                                                            <thead>
+                                                                            <tr>
+                                                                                <th>Número de Cuenta</th>
+                                                                                <th>Titular</th>
+                                                                                <th>Tipo de Cuenta</th>
+                                                                            </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td>0111-0122-25-6655447788</td>
+                                                                                <td>Grupo CIS de Venezuela, C.A.</td>
+                                                                                <td>Jurídica</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>0111-0455-25-7744113685</td>
+                                                                                <td>El mundo del Pollo, C.A.</td>
+                                                                                <td>Jurídica</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>0111-0789-87-7896547896</td>
+                                                                                <td>Gabriela Chacón</td>
+                                                                                <td>Natural</td>
+                                                                            <tr>
+                                                                                <td>0111-1937-78-8866332574</td>
+                                                                                <td>Claudio Chacón</td>
+                                                                                <td>Natural</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>0111-0974-74-9631478521</td>
+                                                                                <td>Ministerio de Ciencia y Tecnología</td>
+                                                                                <td>Gobierno</td>
+                                                                                </tr>                                                                                    
+                                                                            </tbody>
+                                                                    </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                     </form>
+                                </div>
+                            </div>
+                        </article>
+
+                    </aside>
+                </div>
+            </div>
+            <div class="card-footer - text-center">
+                <strong>CISmart Sign Web </strong> - Registro de Usuarios - www.grupocis.net - 
+                Todos los derechos reservados - <p>&copy; 2009 -  Caracas - Venezuela.
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,914 @@
+<script src="css/jquery/jquery-3.3.1.js"></script>
+<script src="bootstrap/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> 
+<link href="css/master.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>CISmart Sign Web - Registro de Productos</title>
+        <link rel="shortcut icon" href="img/icon_cis.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div class="card">
+            <div class="card-header"><strong>CISmart Sign Web </strong> - Registro de Productos
+                <div class="d-flex justify-content-end">
+                        <div class="brand_logo_container_card">
+                          <img src="img/logo.png" class="brand_logo_card" alt="Logo">
+                      </div>
+                  </div>
+            </div>
+            <div class="card-body">
+                <aside class="col-sm-12">
+                    <article class="card-group-item">
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <form>
+                                    <section class="container py-4">
+                                        <div class="row">
+                                            <!--Tabs del Panel Derecho -->
+                                            <div class="col-md-12">
+                                                <ul id="tabsJustified" class="nav nav-tabs">
+                                                    <li class="nav-item"><a href="" data-target="#DefinicionProducto" data-toggle="tab" class="nav-link small text-uppercase active show">Definición Producto</a></li>
+                                                    <li class="nav-item"><a href="" data-target="#DefinicionAutorizados" data-toggle="tab" class="nav-link small text-uppercase">Definición Autorizados</a></li>
+                                                    <li class="nav-item"><a href="" data-target="#DefinicionSellos" data-toggle="tab" class="nav-link small text-uppercase">Definición Sellos</a></li>                                                        
+                                                    <li class="nav-item"><a href="" data-target="#DefinicionCondiciones" data-toggle="tab" class="nav-link small text-uppercase">Condiciones de Movilización</a></li>
+                                                </ul>
+                                                
+                                                <div id="tabsJustifiedContent" class="tab-content">
+                                                    <div id="DefinicionProducto" class="tab-pane fade  active show">
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-center h-100">
+                                                                <aside class="col-sm-6">
+                                                                        <article class="card-group-item">
+                                                                            <div class="filter-content">
+                                                                                <div class="card-body">
+                                                                                    <form>
+                                                                                        <div class="card">
+                                                                                            <div class="card-header">
+                                                                                                    Datos del Producto
+                                                                                            </div>
+                                                                                            <div class="card-body">
+                                                                                                <!-- Número de Cuenta -->
+                                                                                                <div class="form-group row">
+                                                                                                    <label for="exampleInputPassword1">Número de Cuenta</label>
+                                                                                                    <div class="col-sm-10">
+                                                                                                        <div class="input-group-append">
+                                                                                                        
+                                                                                                            <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                                                                                                            <input type="text" class="form-control" id="inputCTA" placeholder="Número de Cuenta"   data-toggle="tooltip" data-placement="right" title="Número de Cuenta">
+                                                                                                            <span class="input-group-append">
+                                                                                                                    <button class="btn btn-outline-secondary" type="button">
+                                                                                                                        <i class="fa fa-search"></i>
+                                                                                                                    </button>
+                                                                                                            </span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <!-- Nombre del Titular -->
+                                                                                                <div class="form-group row">
+                                                                                                    <label for="inputCI">Datos del Titular</label>
+                                                                                                    <div class="col-sm-10">
+                                                                                                        <div class="input-group-append">
+                                                                                                            <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                                                                                                            <input type="text" class="form-control" id="inputCI" placeholder="CI/Rif"   data-toggle="tooltip" data-placement="right" title="Cédula de Identidad / Rif">
+                                                                                                            <span class="input-group-append">
+                                                                                                                    <button class="btn btn-outline-secondary" type="button">
+                                                                                                                        <i class="fa fa-search"></i>
+                                                                                                                    </button>
+                                                                                                            </span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <div class="input-group-append">
+                                                                                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                                                                            <input type="text" class="form-control" id="inputNombreTitular" placeholder="Nombre del Titular"   data-toggle="tooltip" data-placement="right" title="Nombre del Titular">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <!-- Nombre del Representante Legal -->
+                                                                                                <div class="form-group row">
+                                                                                                        <label for="inputCI">Datos del Representante Legal</label>
+                                                                                                        <div class="col-sm-10">
+                                                                                                            <div class="input-group-append">
+                                                                                                                <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                                                                                                                <input type="text" class="form-control" id="inputCI" placeholder="CI/Rif"   data-toggle="tooltip" data-placement="right" title="Cédula de Identidad / Rif">
+                                                                                                                <span class="input-group-append">
+                                                                                                                        <button class="btn btn-outline-secondary" type="button">
+                                                                                                                            <i class="fa fa-search"></i>
+                                                                                                                        </button>
+                                                                                                                </span>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                                <div class="form-group row">
+                                                                                                        <div class="col-sm-12">
+                                                                                                            <div class="input-group-append">
+                                                                                                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                                                                                <input type="text" class="form-control" id="inputNombreRepresentante" placeholder="Nombre del Representante Legal"   data-toggle="tooltip" data-placement="right" title="Nombre del Representante Legal">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                </div>   
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="card">
+                                                                                            <div class="card-header">
+                                                                                                    Atributos
+                                                                                            </div>
+                                                                                            <div class="card-body">
+                                                                                            <!-- Sucursales-->
+                                                                                            <div class="form-group row"> 
+                                                                                                <label for="inputCI">Sucursal</label>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <div class="input-group-append">
+                                                                                                        <span class="input-group-text"><i class="fas fa-building"></i></span>
+                                                                                                        <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Sucursal">
+                                                                                                            <option selected>Sucursal</option>
+                                                                                                            <option value="1">0001 - Principal</option>
+                                                                                                            <option value="2">0002 - Av. Lecuna</option>
+                                                                                                            <option value="3">0003 - Centro Lido</option>
+                                                                                                            <option value="4">0004 - CCCT</option>
+                                                                                                            <option value="5">0004 - El Recreo</option>                                                                                                            
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!-- Tipo de Titular -->
+                                                                                            <div class="form-group row">
+                                                                                                    <label for="inputCI">Tipo de Titular</label>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <div class="input-group-append">
+                                                                                                            <span class="input-group-text"><i class="fas fa-building"></i></span>
+                                                                                                            <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Tipo de Titular">
+                                                                                                                <option selected>Tipo de Titular</option>
+                                                                                                                <option value="1">0001 - Natural</option>
+                                                                                                                <option value="2">0002 - Jurídico</option>
+                                                                                                                <option value="3">0003 - Gobierno</option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                            </div>
+                                                                                            <!-- Tipo de Regla -->
+                                                                                            <div class="form-group row">
+                                                                                                    <label for="inputCI">Tipo de Regla</label>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <div class="input-group-append">
+                                                                                                            <span class="input-group-text"><i class="fas fa-building"></i></span>
+                                                                                                            <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Tipo de Regla">
+                                                                                                                <option selected>Tipo de Regla</option>
+                                                                                                                <option value="1">0001 - Conjuntas</option>
+                                                                                                                <option value="2">0002 - Indistintas</option>
+                                                                                                                <option value="3">0003 - Única</option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                            </div>  
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </article>
+                                                                </aside>
+                                            
+                                                                <aside class="col-sm-6">
+                                                                    <article class="card-group-item">
+                                                                        <div class="filter-content">
+                                                                            <div class="card-body">
+                                                                                <form>
+                                                                                    <div class="form-group row">
+                                                                                        <label for="inputCI">Observaciones</label>
+                                                                                        <div class="col-sm-10">
+                                                                                            <div class="input-group-append">
+                                                                                                <textarea id="Observaciones" class="md-textarea form-control" rows="3" placeholder="Observaciones"data-toggle="tooltip" data-placement="right" title="Observaciones"></textarea>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <div class="form-inline">
+                                                                                            <label class="col-sm-4 col-form-label">Fecha de Registro :</label>
+                                                                                            <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>                                                                                           
+                                                                                            <input type="text" class="form-control col-6" id="FechaRegistro"   data-toggle="tooltip" data-placement="right" title="Fecha de Registro" readonly>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <div class="form-inline">
+                                                                                            <label class="col-sm-4 col-form-label">Fecha de Última Actualización :</label>
+                                                                                            <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span> 
+                                                                                            <input type="text" class="form-control col-6" id="UltimoActualizacion"   data-toggle="tooltip" data-placement="right" title="Última Actualización" readonly>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <h6>Firmantes Registrados</h6>
+                                                                                    <div class="container_table"   style="height: 200px; width: 500px; overflow: auto;">
+                                                                                        <table class="table table-dark table-striped table-hover">
+                                                                                            <thead>
+                                                                                            <tr>
+                                                                                                <th>C.I.</th>
+                                                                                                <th>Nombre Completo</th>
+                                                                                                <th>Tipo de Firma</th>
+                                                                                            </tr>
+                                                                                            </thead>
+                                                                                            <tbody>
+                                                                                            <tr>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                            <tr>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                            </tr>     
+                                                                                            <tr>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                            </tr> 
+                                                                                            <tr>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                                <td></td>
+                                                                                            </tr>                                                                                                                            
+                                                                                            </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                    
+                                                                                    <h6>Condiciones de Movilización</h6>
+                                                                                    <div class="container_table"   style="height: 200px; width: 500px; overflow: auto;">
+                                                                                            <table class="table table-dark table-striped table-hover">
+                                                                                              <thead>
+                                                                                                <tr>
+                                                                                                  <th>Firma I</th>
+                                                                                                  <th>Firma II</th>
+                                                                                                  <th>Firma III</th>
+                                                                                                  <th>Firma IV</th>
+                                                                                                  <th>Monto Límite</th>
+                                                                                                </tr>
+                                                                                              </thead>
+                                                                                              <tbody>
+                                                                                                <tr>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                  <td></td>
+                                                                                                  <td></td>                                                                                                  
+                                                                                                <tr>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                </tr>     
+                                                                                                <tr>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                </tr> 
+                                                                                                <tr>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                    <td></td>
+                                                                                                </tr>                                                                                                                            
+                                                                                                </tr>
+                                                                                              </tbody>
+                                                                                            </table>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                    </article>
+                                            
+                                                                    <div class="pp">
+                                                                            <button type="submit" class="btn card_btn col-3 ">Nuevo    </button>
+                                                                            <button type="submit" class="btn card_btn col-3">Almacenar</button>
+                                                                            <button type="submit" class="btn card_btn col-3">Eliminar </button>
+                                                                            <a class="btn card_btn col-2 submitSignUp" href="Principal.html">Salir</a>
+                                                                    </div>
+                                            
+                                                                
+                                                                </aside>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                        
+                                                    <div id="DefinicionAutorizados" class="tab-pane fade">
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-center h-100">
+                                                                <aside class="col-sm-6">
+                                                                    <article class="card-group-item">
+                                                                        <div class="filter-content">
+                                                                            <div class="card-body">
+                                                                                <form>
+                                                                                    <div class="card">
+                                                                                        <div class="card-header">
+                                                                                                Datos del Cliente
+                                                                                        </div>
+                                                                                        <div class="card-body">
+                                                                                            <!-- Número de Cuenta -->
+                                                                                            <div class="form-group row">
+                                                                                                <label for="exampleInputPassword1">Número de Cuenta</label>
+                                                                                                <div class="col-sm-10">
+                                                                                                    <div class="input-group-append">
+                                                                                                    
+                                                                                                        <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                                                                                                        <input type="text" class="form-control" id="inputCTA" placeholder="Número de Cuenta"   data-toggle="tooltip" data-placement="right" title="Número de Cuenta">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!-- Nombre del Autorizado -->
+                                                                                            <div class="form-group row">
+                                                                                                <label for="inputCI">Autorizado</label>
+                                                                                                <div class="col-sm-10">
+                                                                                                    <div class="input-group-append">
+                                                                                                        <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                                                                                                        <input type="text" class="form-control" id="inputCI" placeholder="CI/Rif"   data-toggle="tooltip" data-placement="right" title="Cédula de Identidad / Rif">
+                                                                                                        <span class="input-group-append">
+                                                                                                                <button class="btn btn-outline-secondary" type="button">
+                                                                                                                    <i class="fa fa-search"></i>
+                                                                                                                </button>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <div class="input-group-append">
+                                                                                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                                                                        <input type="text" class="form-control" id="inputNombreTitular" placeholder="Nombre del Autorizado"   data-toggle="tooltip" data-placement="right" title="Nombre del Autorizado">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!-- Fecha de Registro -->
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-6">
+                                                                                                    <div class="input-group-append">
+                                                                                                        <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                                                                                        <input type="text" class="form-control" id="inputUsuario" placeholder="Fecha de Registro"  data-toggle="tooltip" data-placement="right" title="Fecha de Registro">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="input-group-append">
+                                                                                                    <span class="input-group-text"><i class="fas fa-check-double"></i></span>
+                                                                                                    <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Tipo de Firmante">
+                                                                                                        <option selected>Tipo de Firma</option>
+                                                                                                        <option value="1">A</option>
+                                                                                                        <option value="2">B</option>
+                                                                                                        <option value="3">C</option>
+                                                                                                        <option value="4">D</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="card">
+                                                                                        <div class="card-header">
+                                                                                                Autorizados Registrados en la Cuenta
+                                                                                        </div>
+                                                                                        <div class="card-body">
+                                                                                            <div class="container_table"   style="height: 200px; width: 440px; overflow: auto;">
+                                                                                                <table class="table table-dark table-striped table-hover">
+                                                                                                    <thead>
+                                                                                                    <tr>
+                                                                                                        <th>C.I.</th>
+                                                                                                        <th>Nombre Completo</th>
+                                                                                                        <th>Tipo</th>
+                                                                                                    </tr>
+                                                                                                    </thead>
+                                                                                                    <tbody>
+                                                                                                    <tr>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                    <tr>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                    </tr>     
+                                                                                                    <tr>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                    </tr> 
+                                                                                                    <tr>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                        <td></td>
+                                                                                                    </tr>                                                                                                                            
+                                                                                                    </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                </form>                                                                                    
+                                                                            </div>
+                                                                                
+                                                                        </div>
+                                                                    </article>
+                                                                </aside>
+
+                                                                <aside>
+                                                                    <div class="row pb-2">
+                                                                        <div class="col-md-7">
+                                                                                
+                                                                            <br><hr>
+                                                                            <div class="element">
+                                                                                <img src="img/Signature.png" class="img-thumbnail" alt="signature"  width="393" height="330">
+                                                                                <br><hr>
+                                                                                <p>Actualizar Registro de Firma Completa...</p>
+                                                                            
+                                                                                <div class="custom-file col-md-7">
+                                                                                    
+                                                                                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                                                                    <label class="custom-file-label" for="validatedCustomFile">Seleccionar Archivo...</label>
+                                                                                    <div class="invalid-feedback">Archivo Inválido</div>
+
+                                                                                    <div class="form-group">
+                                                                                            <div class="form-inline">
+                                                                                                <div class="custom-control custom-checkbox"><br>
+                                                                                                    <input type="checkbox" class="custom-control-input" id="customControlCaducidad">
+                                                                                                    <label class="custom-control-label" for="customControlCaducidad">Caducidad</label>
+                                                                                                </div>
+                                                                                            </div>  
+                                                                                    </div> 
+                                                                                        
+                                                                                    <div class="form-group">
+                                                                                        <div class="form-inline">
+                                                                                            <div class="input-group-append custom-checkbox justify-content-center">
+                                                                                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                                                                                <input type="date" name="bday" max="3000-12-31" 
+                                                                                                        min="1000-01-01" class="form-control">
+                                                                                            </div>
+                                                                                        </div>  
+                                                                                    </div>  
+                                                                                </div>
+                                                                            </div>
+                                                                        </div></hr><br>
+                                                                    </div>
+
+                                                                    <div class="pp">
+                                                                            <br><hr>
+                                                                            <br><hr>
+                                                                            <br><hr>
+                                                                            <button type="submit" class="btn card_btn col-3 ">Nuevo    </button>
+                                                                            <button type="submit" class="btn card_btn col-3">Almacenar</button>
+                                                                            <button type="submit" class="btn card_btn col-3">Eliminar </button>
+                                                                            <a class="btn card_btn col-2 submitSignUp" href="Principal.html">Salir</a>
+                                                                    </div>
+                                                                </aside>
+
+                                                            </div>
+ 
+                                                            <aside class="col-sm-6">
+                                                            </aside>
+                                                        </div>
+                                                    </div>
+                                                    <div id="DefinicionSellos" class="tab-pane fade">
+                                                        <div class="card-body">
+                                                                <div class="d-flex justify-content-center h-100">
+                                                                    <aside class="col-sm-6">
+                                                                        <article class="card-group-item">
+                                                                            <div class="filter-content">
+                                                                                <div class="card-body">
+                                                                                    <form>
+                                                                                        <div class="card">
+                                                                                            <div class="card-header">
+                                                                                                    Datos de los Sellos
+                                                                                            </div>
+                                                                                            <div class="card-body">
+                                                                                                <!-- Número de Cuenta -->
+                                                                                                <div class="form-group row">
+                                                                                                    <label for="exampleInputPassword1">Número de Cuenta</label>
+                                                                                                    <div class="col-sm-10">
+                                                                                                        <div class="input-group-append">
+                                                                                                        
+                                                                                                            <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                                                                                                            <input type="text" class="form-control" id="inputCTA" placeholder="Número de Cuenta"   data-toggle="tooltip" data-placement="right" title="Número de Cuenta">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <!-- Uso Obligatorio -->
+                                                                                                <div class="input-group row">
+                                                                                                    <div class="custom-control custom-checkbox">
+                                                                                                        <input type="checkbox" class="custom-control-input" id="customUsoObligatorio">
+                                                                                                        <label class="custom-control-label" for="customUsoObligatorio">Uso Obligatorio en Validación</label><br><hr>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-6">
+                                                                                                        <div class="input-group-append">
+                                                                                                            <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                                                                                            <input type="text" class="form-control" id="inputUsuario" placeholder="Fecha de Registro"  data-toggle="tooltip" data-placement="right" title="Fecha de Registro">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="input-group-append">
+                                                                                                        <span class="input-group-text"><i class="fas fa-check-double"></i></span>
+                                                                                                        <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Tipo de Imagen">
+                                                                                                            <option selected>Tipo de Imagen</option>
+                                                                                                            <option value="1">Sello</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="card">
+                                                                                            <div class="card-header">
+                                                                                                    Autorizados Registrados en la Cuenta
+                                                                                            </div>
+                                                                                            <div class="card-body">
+                                                                                                <div class="container_table"   style="height: 200px; width: 440px; overflow: auto;">
+                                                                                                    <table class="table table-dark table-striped table-hover">
+                                                                                                        <thead>
+                                                                                                        <tr>
+                                                                                                            <th>Cód.</th>
+                                                                                                            <th>Descripción</th>
+                                                                                                            <th>Consecutivo</th>
+                                                                                                        </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody>
+                                                                                                        <tr>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                        <tr>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                        </tr>     
+                                                                                                        <tr>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                        </tr> 
+                                                                                                        <tr>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                            <td></td>
+                                                                                                        </tr>                                                                                                                            
+                                                                                                        </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+    
+    
+                                                                                    </form>                                                                                    
+                                                                                </div>
+                                                                                    
+                                                                            </div>
+                                                                        </article>
+                                                                    </aside>
+    
+                                                                    <aside>
+                                                                        <div class="row pb-2">
+                                                                            <div class="col-md-7">
+                                                                                    
+                                                                                <br><hr>
+                                                                                <div class="element">
+                                                                                    <img src="img/Stamp2.png" class="img-thumbnail" alt="signature"  width="293" height="230">
+                                                                                    <br><hr>
+                                                                                    <p>Actualizar Registro de Sello ...</p>
+                                                                                
+                                                                                    <div class="custom-file col-md-7">
+                                                                                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                                                                        <label class="custom-file-label" for="validatedCustomFile">Seleccionar Archivo...</label>
+                                                                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+    
+                                                                                        <div class="form-group">
+                                                                                                <div class="form-inline">
+                                                                                                    <div class="custom-control custom-checkbox"><br>
+                                                                                                        <input type="checkbox" class="custom-control-input" id="customControlCaducidad2">
+                                                                                                        <label class="custom-control-label" for="customControlCaducidad2">Caducidad</label>
+                                                                                                    </div>
+                                                                                                </div>  
+                                                                                        </div> 
+                                                                                            
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-inline">
+                                                                                                <div class="input-group-append custom-checkbox justify-content-center">
+                                                                                                    <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span> 
+                                                                                                    <input type="date" name="bday" max="3000-12-31" 
+                                                                                                            min="1000-01-01" class="form-control">
+                                                                                                </div>
+                                                                                            </div>  
+                                                                                        </div>  
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div></hr><br>
+                                                                        </div>
+    
+                                                                        <div class="pp">
+                                                                                <br><hr>
+                                                                                <br><hr>
+                                                                                <br><hr>
+                                                                                <button type="submit" class="btn card_btn col-3 ">Nuevo    </button>
+                                                                                <button type="submit" class="btn card_btn col-3">Almacenar</button>
+                                                                                <button type="submit" class="btn card_btn col-3">Eliminar </button>
+                                                                                <a class="btn card_btn col-2 submitSignUp" href="Principal.html">Salir</a>
+                                                                        </div>
+                                                                    </aside>
+    
+                                                                </div>
+        
+                                                                <aside class="col-sm-6">
+                                                                </aside>
+                                                        </div>
+                                                    </div>                                                        
+                                                    <div id="DefinicionCondiciones" class="tab-pane fade">
+                                                        
+                                                        <div class="d-flex justify-content-center h-100">
+                                                            <aside class="col-sm-6">
+                                                                <article class="card-group-item">
+                                                                        <div class="filter-content">
+                                                                            <div class="card-body">
+                                                                                <form>
+                                                                                    <div class="card">
+                                                                                        <div class="card-header">
+                                                                                                Definición de Reglas
+                                                                                        </div>
+                                                                                        <div class="card-body">
+                                                                                            <!-- Número de Cuenta -->
+                                                                                            <div class="form-group row">
+                                                                                                <label for="exampleInputPassword1">Número de Cuenta</label>
+                                                                                                <div class="col-sm-10">
+                                                                                                    <div class="input-group-append">
+                                                                                                    
+                                                                                                        <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                                                                                                        <input type="text" class="form-control" id="inputCTA" placeholder="Número de Cuenta"   data-toggle="tooltip" data-placement="right" title="Número de Cuenta">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!-- Firma I -->
+                                                                                            <div class="form-group row">
+                                                                                                <label for="exampleInputPassword1">Tipo de Firma I</label>
+                                                                                                <div class="col-sm-10">
+                                                                                                        <div class="input-group-append">
+                                                                                                                <span class="input-group-text"><i class="fas fa-check-double"></i></span>
+                                                                                                                <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Tipo de Firmante">
+                                                                                                                    <option selected>Tipo de Firma</option>
+                                                                                                                    <option value="1">A</option>
+                                                                                                                    <option value="2">B</option>
+                                                                                                                    <option value="3">C</option>
+                                                                                                                    <option value="4">D</option>
+                                                                                                                </select>
+                                                                                                            </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!-- Firma II-->
+                                                                                            <div class="form-group row">
+                                                                                                <label for="exampleInputPassword1">Tipo de Firma II</label>
+                                                                                                <div class="col-sm-10">
+                                                                                                        <div class="input-group-append">
+                                                                                                                <span class="input-group-text"><i class="fas fa-check-double"></i></span>
+                                                                                                                <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Tipo de Firmante">
+                                                                                                                    <option selected>Tipo de Firma</option>
+                                                                                                                    <option value="1">A</option>
+                                                                                                                    <option value="2">B</option>
+                                                                                                                    <option value="3">C</option>
+                                                                                                                    <option value="4">D</option>
+                                                                                                                </select>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                            </div>  
+                                                                                            <!-- Firma III-->
+                                                                                            <div class="form-group row">
+                                                                                                    <label for="exampleInputPassword1">Tipo de Firma III</label>
+                                                                                                <div class="col-sm-10">
+                                                                                                        <div class="input-group-append">
+                                                                                                                <span class="input-group-text"><i class="fas fa-check-double"></i></span>
+                                                                                                                <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Tipo de Firmante">
+                                                                                                                    <option selected>Tipo de Firma</option>
+                                                                                                                    <option value="1">A</option>
+                                                                                                                    <option value="2">B</option>
+                                                                                                                    <option value="3">C</option>
+                                                                                                                    <option value="4">D</option>
+                                                                                                                </select>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                            </div>    
+                                                                                            <!-- Firma IV-->
+                                                                                            <div class="form-group row">
+                                                                                                <label for="exampleInputPassword1">Tipo de Firma IV</label>
+                                                                                                <div class="col-sm-10">
+                                                                                                        <div class="input-group-append">
+                                                                                                                <span class="input-group-text"><i class="fas fa-check-double"></i></span>
+                                                                                                                <select class="browser-default custom-select"   data-toggle="tooltip" data-placement="right" title="Tipo de Firmante">
+                                                                                                                    <option selected>Tipo de Firma</option>
+                                                                                                                    <option value="1">A</option>
+                                                                                                                    <option value="2">B</option>
+                                                                                                                    <option value="3">C</option>
+                                                                                                                    <option value="4">D</option>
+                                                                                                                </select>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                            </div> 
+
+                                                                                            <!-- Monto Límite -->
+                                                                                            <div class="form-group row">
+                                                                                                    <label for="exampleInputPassword1">Monto Máximo</label>
+                                                                                                    <div class="col-sm-10">
+                                                                                                        <div class="input-group-append">
+                                                                                                                
+                                                                                                            <span class="input-group-text"><i class="fas fa-money-bill-alt"></i></span>
+                                                                                                            <input type="text" class="form-control" id="inputMTO" placeholder="Monto Máximo"   data-toggle="tooltip" data-placement="right" title="Monto Máximo">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                            </div>   
+                                                                                            
+                                                                                            <div class="form-group">
+                                                                                                    <div class="form-inline">
+                                                                                                        <div class="custom-control custom-checkbox"><br>
+                                                                                                            <input type="checkbox" class="custom-control-input" id="customControlCombinacion">
+                                                                                                            <label class="custom-control-label" for="customControlCombinacion">Acepta Combinaciones</label>
+                                                                                                        </div>
+                                                                                                    </div>  
+                                                                                            </div> 
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                </article>
+                                                            </aside>
+                                                            <aside class="col-sm-6">
+                                                                <br>
+                                                                <h6>Condiciones de Movilización</h6>
+                                                                <div class="container_table"   style="height: 400px; width: 540px; overflow: auto;">
+                                                                        <table class="table table-dark table-striped table-hover">
+                                                                            <thead>
+                                                                            <tr>
+                                                                                <th>I</th>
+                                                                                <th>II</th>
+                                                                                <th>III</th>
+                                                                                <th>IV</th>
+                                                                                <th>Monto Máximo</th>
+                                                                            </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            <tr>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr>     
+                                                                            <tr>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr> 
+                                                                            <tr>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr>                                                                                                                            
+                                                                            <tr>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                </tr>     
+                                                                                <tr>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                </tr> 
+                                                                                <tr>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                    <td></td>
+                                                                                </tr>   
+                                                                            </tbody>
+                                                                        </table>
+                                                                </div>
+                                                                <div class="pp">
+                                                                        <button type="submit" class="btn card_btn col-3 ">Nuevo    </button>
+                                                                        <button type="submit" class="btn card_btn col-3">Almacenar</button>
+                                                                        <button type="submit" class="btn card_btn col-3">Eliminar </button>
+                                                                        <a class="btn card_btn col-2 submitSignUp" href="Principal.html">Salir</a>
+                                                                </div>
+                                                            </aside>
+                                                        </div>
+
+                                                       
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                
+                </aside>
+
+                <br><hr>
+            </div>
+ 
+            <div class="card-footer - text-center">
+                <strong>CISmart Sign Web </strong> - Registro de Usuarios - www.grupocis.net - 
+                Todos los derechos reservados - <p>&copy; 2009 -  Caracas - Venezuela.
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,278 @@
+<script src="css/jquery/jquery-3.3.1.js"></script>
+<script src="bootstrap/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> 
+<link href="css/master.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>CISmart Sign Web - Registro de Perfiles</title>
+        <link rel="shortcut icon" href="img/icon_cis.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="card">
+            <div class="card-header"><strong>CISmart Sign Web </strong> - Registro de Sucursales
+                <div class="d-flex justify-content-end">
+                        <div class="brand_logo_container_card">
+                          <img src="img/logo.png" class="brand_logo_card" alt="Logo">
+                      </div>
+                  </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-center h-100">
+                    <aside class="col-sm-6">
+                            <article class="card-group-item">
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-user-cog"></i></span>
+                                                        <input type="text" class="form-control" id="inputCI" placeholder="Cód. Sucursal"   data-toggle="tooltip" data-placement="right" title="Código de Sucursal">
+                                                        <span class="input-group-append">
+                                                                <button class="btn btn-outline-secondary" type="button">
+                                                                    <i class="fa fa-search"></i>
+                                                                </button>
+                                                        </span>
+                                                    </div>
+                                                        
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fa fa-building"></i></span>
+                                                        <input type="text" class="form-control" id="inputNombre" placeholder="Nombre"   data-toggle="tooltip" data-placement="right" title="Nombre Sucursal">
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-address-book"></i></span>
+                                                        <input type="text" class="form-control" id="inputDireccion1" placeholder="Dirección"   data-toggle="tooltip" data-placement="right" title="Dirección">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-address-book"></i></span>
+                                                        <input type="text" class="form-control" id="inputDireccion2" placeholder="Dirección"   data-toggle="tooltip" data-placement="right" title="Dirección">
+                                                    </div>
+                                                </div>
+                                            </div>       
+                                            
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-address-book"></i></span>
+                                                        <input type="text" class="form-control" id="inputDireccion3" placeholder="Dirección"   data-toggle="tooltip" data-placement="right" title="Dirección">
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-map"></i></span>
+                                                        <input type="text" class="form-control" id="inputPais" placeholder="País"   data-toggle="tooltip" data-placement="right" title="País">
+                                                    </div>
+                                                        
+                                                </div>
+                                                <div class="col-sm-6">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text"><i class="fas fa-map-marked"></i></span>
+                                                            <input type="text" class="form-control" id="inputEstado" placeholder="Estado"   data-toggle="tooltip" data-placement="right" title="Estado">
+                                                        </div>
+                                                </div>
+                                                
+                                            </div>  
+                                            
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                                        <input type="text" class="form-control" id="inputphone1" placeholder="Número de Teléfono"   data-toggle="tooltip" data-placement="right" title="Número de Teléfono">
+                                                    </div>
+                                                        
+                                                </div>
+                                                <div class="col-sm-6">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                                            <input type="text" class="form-control" id="inputphone2" placeholder="Número de Teléfono"   data-toggle="tooltip" data-placement="right" title="Número de Teléfono">
+                                                        </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                                        <input type="text" class="form-control" id="inputphone3" placeholder="Número de Teléfono"   data-toggle="tooltip" data-placement="right" title="Número de Teléfono">
+                                                    </div>
+                                                        
+                                                </div>
+                                                <div class="col-sm-6">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                                            <input type="text" class="form-control" id="inputphone4" placeholder="Número de Teléfono"   data-toggle="tooltip" data-placement="right" title="Número de Teléfono">
+                                                        </div>
+                                                </div>
+                                                
+                                            </div>    
+                                            
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-business-time"></i></span>
+                                                        <input type="text" class="form-control" id="inputGerente" placeholder="Gerente"   data-toggle="tooltip" data-placement="right" title="Gerente Asignado" readonly>
+                                                    </div>
+                                                </div>
+                                            </div> 
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-business-time"></i></span>
+                                                        <input type="text" class="form-control" id="inputSubGerente" placeholder="Sub - Gerente"   data-toggle="tooltip" data-placement="right" title="Sub - Gerente Asignado" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>                                             
+
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customControlAgenciaCerrada">
+                                                    <label class="custom-control-label" for="customControlAgenciaCerrada">Agencia Cerrada</label>
+                                                </div>
+                                            </div>
+
+                                            
+
+  
+                                        </form>
+                                    </div>
+                                </div>
+                            </article>
+
+
+                    </aside>
+
+                    <aside class="col-sm-6">
+                        <article class="card-group-item">
+                            <div class="filter-content">
+                                <div class="card-body">
+                                    <form>
+                                        <br>
+                                        <h4>Sucursales Registradas</h4>
+                                        <div class="container_table"  style="height: 400px; overflow: auto;">
+                                                <table class="table table-dark table-striped table-hover">
+                                                  <thead>
+                                                    <tr>
+                                                      <th>Cód. Sucursal</th>
+                                                      <th>Nombre</th>
+                                                      <th>Estatus</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      <td>0001</td>
+                                                      <td>Principal</td>
+                                                      <td>Habilitada</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>0002</td>
+                                                      <td>Sambil Caracas</td>
+                                                      <td>Habilitada</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>0003</td>
+                                                      <td>Centro Lido</td>
+                                                      <td>Habilitada</td>
+                                                    <tr>
+                                                      <td>0004</td>
+                                                      <td>El Recreo</td>
+                                                      <td>Cerrada</td>
+                                                    </tr>    
+                                                    <tr>
+                                                        <td>0005</td>
+                                                        <td>Tolón</td>
+                                                        <td>Habilitada</td>
+                                                      </tr>                                              
+                                                    </tr>
+                                                    <tr>
+                                                        <td>0006</td>
+                                                        <td>San Ignacio</td>
+                                                        <td>Habilitada</td>
+                                                      </tr>                                              
+                                                    </tr>    
+                                                    <tr>
+                                                        <td>0007</td>
+                                                        <td>Av. Universidad</td>
+                                                        <td>Habilitada</td>
+                                                    </tr>       
+                                                    <tr>
+                                                        <td>0008</td>
+                                                        <td>Av. Urdaneta</td>
+                                                        <td>Habilitada</td>
+                                                    </tr>   
+                                                    <tr>
+                                                        <td>0009</td>
+                                                        <td>Av. Lecuna</td>
+                                                        <td>Cerrada</td>
+                                                    </tr>   
+                                                    <tr>
+                                                        <td>0010</td>
+                                                        <td>Buena Ventura Plaza</td>
+                                                        <td>Habilitada</td>
+                                                    </tr>                                                                                                                                                                                                   
+                                                                                                                                                          
+                                                  </tbody>
+                                                </table>
+                                        </div>                                  
+
+                                        <br>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="element">
+                                <button type="submit" class="btn card_btn col-2 ">Nuevo    </button>
+                                <button type="submit" class="btn card_btn col-2">Almacenar</button>
+                                <button type="submit" class="btn card_btn col-2">Eliminar </button>
+                                <a href="Principal.html"><button type="submit" class="btn card_btn col-2">Salir</button></a>
+                        </div>
+                   
+                    </aside>
+                </div>
+            </div>
+            <div class="card-footer - text-center">
+                <strong>CISmart Sign Web </strong> - Registro de Usuarios - www.grupocis.net - 
+                Todos los derechos reservados - <p>&copy; 2009 -  Caracas - Venezuela.
+            </div>
+        </div>
+    </body>
+
+</html>
